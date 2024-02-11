@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="24" height="30" tilewidth="64" tileheight="64" infinite="0" nextlayerid="14" nextobjectid="194">
+ <tileset firstgid="1" source="../tilesets/outside.tsx"/>
+ <tileset firstgid="49" source="../tilesets/items.tsx"/>
+ <tileset firstgid="54" source="../tilesets/inside.tsx"/>
+ <tileset firstgid="150" source="../tilesets/extra.tsx"/>
+ <tileset firstgid="216" source="../tilesets/objects.tsx"/>
+ <tileset firstgid="244" source="../tilesets/platforms.tsx"/>
+ <tileset firstgid="252" source="../tilesets/enemies.tsx"/>
+ <tileset firstgid="252" source="../tilesets/grass.tsx"/>
+ <layer id="9" name="BG" width="24" height="30">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="12" name="BG details" class="window"/>
+ <layer id="1" name="Terrain" width="24" height="30">
+  <data encoding="csv">
+162,162,153,173,173,173,173,173,173,173,173,173,173,173,173,173,173,173,173,173,173,154,162,162,
+162,162,163,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,183,184,186,161,162,162,
+162,162,163,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,186,185,161,162,162,
+162,162,163,0,0,0,0,0,0,0,185,0,0,0,0,0,0,0,0,0,196,161,162,162,
+162,162,163,0,0,0,0,0,0,0,196,0,186,0,0,0,0,0,0,0,0,161,162,162,
+162,162,163,0,0,0,150,151,152,0,0,0,0,0,0,0,0,0,0,0,0,161,162,162,
+162,162,163,0,0,0,172,173,174,0,0,0,0,0,0,150,151,151,151,151,151,165,162,162,
+162,162,163,0,0,0,0,0,186,0,0,0,0,0,0,161,162,162,162,162,162,162,162,162,
+162,162,163,0,0,0,0,0,0,0,0,0,0,0,0,172,173,173,173,173,173,154,162,162,
+162,162,163,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,183,184,185,161,162,162,
+162,162,163,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,186,196,161,162,162,
+162,162,163,0,0,0,150,151,152,0,0,0,0,0,0,0,0,0,0,0,186,161,162,162,
+162,162,163,0,0,0,172,173,174,0,0,0,0,0,0,0,0,0,0,0,0,161,162,162,
+162,162,163,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,161,162,162,
+162,162,163,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,161,162,162,
+162,162,163,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,161,162,162,
+162,162,163,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,161,162,162,
+162,162,163,0,0,0,0,0,0,0,0,0,0,0,0,150,151,151,152,0,0,161,162,162,
+162,162,164,151,151,152,0,0,0,0,0,0,0,0,0,172,173,173,174,0,0,161,162,162,
+162,162,153,173,173,174,0,0,0,0,0,0,0,0,0,186,0,0,0,0,0,161,162,162,
+162,162,163,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,161,162,162,
+162,162,163,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,161,162,162,
+162,162,163,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,161,162,162,
+162,162,163,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,161,162,162,
+162,162,163,0,0,0,0,0,150,151,152,0,0,0,0,150,151,151,152,186,185,161,162,162,
+162,162,163,185,0,0,0,0,161,162,163,0,0,194,195,161,162,162,163,185,196,161,162,162,
+162,162,163,196,186,0,0,186,161,162,163,0,0,205,206,161,162,162,163,196,186,161,162,162,
+162,162,164,151,151,151,151,151,165,162,164,151,151,151,151,165,162,162,164,151,151,165,162,162,
+162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,
+162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162
+</data>
+ </layer>
+ <layer id="5" name="Platforms" width="24" height="30">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="10" name="FG" width="24" height="30">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Objects">
+  <object id="4" name="flag" gid="219" x="1184" y="384" width="68" height="186"/>
+  <object id="15" name="player" gid="223" x="192" y="1536" width="74" height="56"/>
+  <object id="88" name="saw" x="448" y="1216" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="89" name="saw" x="576" y="1152" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="90" name="saw" x="704" y="1216" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="91" name="saw" x="832" y="1152" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="134" name="saw" x="352" y="352" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="135" name="saw" x="352" y="736" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="140" name="saw" x="896" y="512" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="141" name="saw" x="832" y="448" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="142" name="saw" x="704" y="448" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="143" name="saw" x="576" y="448" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="178" name="saw" x="640" y="512" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="179" name="saw" x="768" y="512" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="189" name="floor_spike" gid="1073742050" x="960" y="640" width="64" height="64">
+   <properties>
+    <property name="inverted" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="190" name="floor_spike" gid="1073742050" x="1024" y="640" width="64" height="64">
+   <properties>
+    <property name="inverted" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="191" name="floor_spike" gid="1073742050" x="1088" y="640" width="64" height="64">
+   <properties>
+    <property name="inverted" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="192" name="floor_spike" gid="1073742050" x="512" y="576" width="64" height="64">
+   <properties>
+    <property name="inverted" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="193" name="floor_spike" gid="1073742050" x="640" y="384" width="64" height="64">
+   <properties>
+    <property name="inverted" type="bool" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="13" name="Moving Objects">
+  <object id="81" name="spike" gid="227" x="576" y="1536" width="54" height="54">
+   <properties>
+    <property name="end_angle" type="int" value="360"/>
+    <property name="platform" type="bool" value="false"/>
+    <property name="radius" type="int" value="100"/>
+    <property name="speed" type="int" value="50"/>
+    <property name="start_angle" type="int" value="180"/>
+   </properties>
+  </object>
+  <object id="87" name="helicopter" x="384" y="1088" width="512" height="10">
+   <properties>
+    <property name="flip" type="bool" value="false"/>
+    <property name="platform" type="bool" value="true"/>
+    <property name="speed" type="int" value="60"/>
+   </properties>
+  </object>
+  <object id="133" name="saw" x="187" y="320" width="10" height="512">
+   <properties>
+    <property name="flip" type="bool" value="false"/>
+    <property name="platform" type="bool" value="false"/>
+    <property name="speed" type="int" value="100"/>
+   </properties>
+  </object>
+  <object id="137" name="spike" gid="227" x="192" y="128" width="54" height="54">
+   <properties>
+    <property name="end_angle" type="int" value="90"/>
+    <property name="platform" type="bool" value="false"/>
+    <property name="radius" type="int" value="100"/>
+    <property name="speed" type="int" value="50"/>
+    <property name="start_angle" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="139" name="helicopter" x="1024" y="704" width="10" height="320">
+   <properties>
+    <property name="flip" type="bool" value="false"/>
+    <property name="platform" type="bool" value="true"/>
+    <property name="speed" type="int" value="100"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="Items">
+  <object id="114" name="silver" gid="52" x="448" y="1408" width="64" height="64"/>
+  <object id="115" name="silver" gid="52" x="384" y="1344" width="64" height="64"/>
+  <object id="116" name="silver" gid="52" x="320" y="1472" width="64" height="64"/>
+  <object id="117" name="silver" gid="52" x="448" y="1536" width="64" height="64"/>
+  <object id="118" name="silver" gid="52" x="384" y="1472" width="64" height="64"/>
+  <object id="119" name="silver" gid="52" x="384" y="1600" width="64" height="64"/>
+  <object id="120" name="silver" gid="52" x="448" y="1472" width="64" height="64"/>
+  <object id="121" name="silver" gid="52" x="256" y="1472" width="64" height="64"/>
+  <object id="122" name="gold" gid="50" x="512" y="1472" width="64" height="64"/>
+  <object id="124" name="silver" gid="52" x="1152" y="1344" width="64" height="64"/>
+  <object id="125" name="silver" gid="52" x="1152" y="1408" width="64" height="64"/>
+  <object id="126" name="silver" gid="52" x="1152" y="1472" width="64" height="64"/>
+  <object id="127" name="silver" gid="52" x="1088" y="1408" width="64" height="64"/>
+  <object id="128" name="silver" gid="52" x="1216" y="1408" width="64" height="64"/>
+  <object id="129" name="silver" gid="52" x="1280" y="1472" width="64" height="64"/>
+  <object id="130" name="silver" gid="52" x="1024" y="1472" width="64" height="64"/>
+  <object id="131" name="silver" gid="52" x="1152" y="1536" width="64" height="64"/>
+  <object id="132" name="diamond" gid="49" x="640" y="1216" width="64" height="64"/>
+  <object id="138" name="skull" gid="53" x="192" y="128" width="64" height="64"/>
+  <object id="144" name="silver" gid="52" x="192" y="1152" width="64" height="64"/>
+  <object id="145" name="silver" gid="52" x="256" y="1152" width="64" height="64"/>
+  <object id="146" name="silver" gid="52" x="192" y="1088" width="64" height="64"/>
+  <object id="147" name="silver" gid="52" x="704" y="896" width="64" height="64"/>
+  <object id="148" name="silver" gid="52" x="768" y="896" width="64" height="64"/>
+  <object id="149" name="silver" gid="52" x="640" y="896" width="64" height="64"/>
+  <object id="150" name="silver" gid="52" x="768" y="960" width="64" height="64"/>
+  <object id="151" name="silver" gid="52" x="832" y="960" width="64" height="64"/>
+  <object id="152" name="silver" gid="52" x="704" y="960" width="64" height="64"/>
+  <object id="153" name="silver" gid="52" x="640" y="960" width="64" height="64"/>
+  <object id="154" name="silver" gid="52" x="576" y="960" width="64" height="64"/>
+  <object id="155" name="silver" gid="52" x="704" y="832" width="64" height="64"/>
+  <object id="156" name="silver" gid="52" x="768" y="256" width="64" height="64"/>
+  <object id="157" name="silver" gid="52" x="640" y="192" width="64" height="64"/>
+  <object id="162" name="silver" gid="52" x="256" y="320" width="64" height="64"/>
+  <object id="163" name="silver" gid="52" x="256" y="256" width="64" height="64"/>
+  <object id="164" name="silver" gid="52" x="256" y="384" width="64" height="64"/>
+  <object id="165" name="silver" gid="52" x="256" y="448" width="64" height="64"/>
+  <object id="166" name="silver" gid="52" x="256" y="512" width="64" height="64"/>
+  <object id="167" name="silver" gid="52" x="256" y="576" width="64" height="64"/>
+  <object id="168" name="silver" gid="52" x="384" y="192" width="64" height="64"/>
+  <object id="169" name="silver" gid="52" x="320" y="192" width="64" height="64"/>
+  <object id="170" name="silver" gid="52" x="448" y="256" width="64" height="64"/>
+  <object id="171" name="silver" gid="52" x="512" y="192" width="64" height="64"/>
+  <object id="172" name="silver" gid="52" x="576" y="192" width="64" height="64"/>
+  <object id="173" name="silver" gid="52" x="704" y="256" width="64" height="64"/>
+  <object id="174" name="silver" gid="52" x="832" y="320" width="64" height="64"/>
+  <object id="175" name="silver" gid="52" x="896" y="384" width="64" height="64"/>
+  <object id="176" name="diamond" gid="49" x="960" y="384" width="64" height="64"/>
+  <object id="180" name="silver" gid="52" x="256" y="960" width="64" height="64"/>
+  <object id="181" name="silver" gid="52" x="320" y="704" width="64" height="64"/>
+  <object id="182" name="silver" gid="52" x="256" y="768" width="64" height="64"/>
+  <object id="183" name="silver" gid="52" x="256" y="832" width="64" height="64"/>
+  <object id="184" name="silver" gid="52" x="256" y="896" width="64" height="64"/>
+  <object id="185" name="silver" gid="52" x="256" y="1024" width="64" height="64"/>
+  <object id="186" name="silver" gid="52" x="320" y="640" width="64" height="64"/>
+ </objectgroup>
+ <objectgroup id="6" name="Enemies"/>
+ <objectgroup id="2" name="Water"/>
+ <objectgroup id="8" name="Data">
+  <object id="28" name="Data" x="0" y="0" width="64" height="64">
+   <properties>
+    <property name="bg" value="Blue"/>
+    <property name="bottom_limit" type="int" value="200"/>
+    <property name="death_border_bottom" type="int" value="0"/>
+    <property name="horizon_line" type="int" value="600"/>
+    <property name="level_unlock" type="int" value="3"/>
+    <property name="top_limit" type="int" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
